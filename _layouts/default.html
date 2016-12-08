@@ -4,31 +4,29 @@
 <head>
     <title> My Blog gh-pages</title>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="{{site.baseurl}}/css/common.css">
 </head>
 
 <body>
 
 	<header>
 		<h1>Meine Blog</h1>
-		<nav>
-			<ul>
-				<li><a href="{{site.baseurl}}/index.html">Home</a></li>
-				<li><a href="{{site.baseurl}}/news.html">News</a></li>
-			</ul>
-		</nav>
+		<!-- Here should be navigation -->
+		{% include nav.html navclass='nav-top' %}
 	</header>
 
 
 	{{ content }}
-</body>
 
-<aside>
-	<ul>
-		<li>Some aside</li>
-		<li>Some aside</li>
-		<li>Some aside</li>
-		<li>Some aside</li>
-	</ul>
-</aside>
+	<!-- Here shoulb be aside -->
+	<!-- {% include aside.html %} -->
+	<!-- Here shoulb be aside -->
+
+	<footer>
+		{% include nav.html navclass='nav-bottom' %}
+		&copy; Grey Tractor 
+	</footer>
+
+</body>
 
 </html>
