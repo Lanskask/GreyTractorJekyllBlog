@@ -1,9 +1,38 @@
 ---
 layout: default
+afterTitle: Just some Different Notes
+meta: Just some Different Notes about Programming, Music, Languages, my Life Wisdoms and so on
+priority: 1.0
 ---
 
-<h1>Head 1</h1>
+<h1>My Big Site</h1>
 
-<p>2Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab autem, commodi, quo nam illum, incidunt eius explicabo quia repudiandae rerum culpa aut dicta excepturi delectus qui harum mollitia porro expedita.</p>
+<h2>Life Notes</h2>
+<ol>
+  {% for life_note in site.categories.life-notes %}
+    <li>
+      <a href="{{site.baseurl}}/life-notes/{{life_note.folder}}">
+        {{ life_note.title }}
+      </a>
+      <br>
+      {{ life_note.content }}
+    </li>
+  {% endfor %}
+</ol>
+
+
+<h2>Different Music Styles</h2>
+<ol>
+{% for music_style in site.data.different-music %}
+  <li>
+    <a href="">{{music_style.title}}</a>
+    <br>
+    {{music_style.content | markdownify }}
+  </li>
+{% endfor %}
+</ol>
+
+<hr>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab autem, commodi, quo nam illum, incidunt eius explicabo quia repudiandae rerum culpa aut dicta excepturi delectus qui harum mollitia porro expedita.</p>
 
 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam vitae magni ducimus excepturi aliquid molestiae nam tempore aut. Deleniti vel itaque provident quos, fugiat commodi totam nesciunt asperiores assumenda reiciendis.</p>

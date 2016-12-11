@@ -1,0 +1,23 @@
+---
+layout: default
+---
+
+<strong>Life Notes</strong>
+<nav>
+  <ul>
+    {% for life_note in site.categories.life-notes %}
+      <li>
+        <a href="{{site.baseurl}}/life-notes/{{life_note.folder}}"
+        class="
+        {% if page.url contains {{life_note.folder}} %}
+          current
+        {% endif %}"
+        >
+          {{ life_note.title }}
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+</nav>
+
+{{content}}

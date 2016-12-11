@@ -2,26 +2,33 @@
 <html>
 
 <head>
-    <title> My Blog gh-pages</title>
+    <title class="title-text">
+    {% if page.title %}
+    	{{page.title}} * 
+    {% endif %}
+    My Blog gh-pages
+    {% if page.title %}
+    	{{page.afterTitle}} * 
+    {% endif %}
+    </title>
+
     <meta charset="utf-8">
-    <link rel="stylesheet" href="{{site.baseurl}}/css/common.css">
+    <meta name="description" content="{{page.meta}}">
+    
+    <link rel="stylesheet" href="{{site.baseurl}}/css/main.css">
+    <!-- <link rel="stylesheet" href="{{site.baseurl}}/css/w3.css"> -->
 </head>
 
 <body>
 
-	<header>
+	<header class="musthead {{page.mastheadClass}}">
 		<h1>Meine Blog</h1>
 		<!-- Here should be navigation -->
 		{% include nav.html navclass='nav-top' %}
 	</header>
 
-
 	{{ content }}
-
-	<!-- Here shoulb be aside -->
 	<!-- {% include aside.html %} -->
-	<!-- Here shoulb be aside -->
-
 	<footer>
 		{% include nav.html navclass='nav-bottom' %}
 		&copy; Grey Tractor 

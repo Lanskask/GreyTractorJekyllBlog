@@ -2,4 +2,39 @@
 layout: default
 ---
 
+<h1>Music News</h1>
+
+<nav>
+  <ul>
+
+    <li>
+			<a href="{{site.baseurl}}/news/"
+			class="
+			{% if page.url contains 'news' %}
+				current
+			{% endif %}" 
+			>News</a>
+		</li>
+
+    <li>
+			<a href="{{site.baseurl}}/music/"
+			class="
+			{% if page.url == '/music.html' %}
+				current
+			{% endif %}"
+			>Music</a>
+		</li>
+
+    <li>
+			<a href="{{site.baseurl}}/notes/"
+			class="
+			{% if page.url == '/notes.html' %}
+				current
+			{% endif %}" 
+			>Notes</a>
+		</li>
+
+  </ul>
+</nav>
+
 {{content}}

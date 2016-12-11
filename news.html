@@ -1,5 +1,7 @@
 ---
-layout: default
+layout: news
+title: News
+changefreq: weekly
 ---
 
 <h1>Some news</h1>
@@ -7,17 +9,10 @@ layout: default
 <ul>
   {% for news in site.categories.news limit:2 %}
     <li>
-      <a href="">
+      <a href="{{site.baseurl}}{{news.url}}">
         {{ news.title }}
       </a>
       <p>{{ news.meta }}</p>
     </li>
   {% endfor %}
 </ul>
-
-    
-
-<hr>
-
-<p>2Advert Tokyo savant soul-delay wonton soup papier-mache shanty town nodal point. City rifle alcohol warehouse stimulate vinyl nodal point. Marketing nano-refrigerator gang free-market render-farm silent bomb tank-traps fluidity math-uplink. Denim computer tank-traps semiotics euro-pop cartel-space. Claymore mine girl sunglasses fetishism dissident sentient bicycle pistol weathered vehicle shanty town systemic Kowloon meta-paranoid soul-delay. Fetishism RAF fluidity shoes bomb rifle cardboard render-farm savant physical systemic 8-bit papier-mache dissident order-flow disposable. Systemic marketing knife table singularity free-market courier. Geodesic hacker-space euro-pop neon cartel towards Kowloon pre-soul-delay sensory dead uplink spook advert. BASE jump lights free-market carbon DIY concrete media post-shanty town dead faded katana hacker Shibuya. 
-</p>

@@ -1,0 +1,37 @@
+---
+layout: life-notes-list
+---
+
+<!--   
+	author: Me
+	placeToTakenFrom: internet
+	comment: It is just a List 
+-->
+<h2>{{ page.title }}</h2>
+<img src="{{site.baseurl}}/img/life_notes/{{page.image}}" alt="Life note - {{page.title}}">
+<br>
+
+<dl>
+	<dt>
+		Author:	
+	</dt>
+	<dd>
+		{{page.author}}
+	</dd>
+	
+	<dt>
+		Place To Taken From:	 
+	</dt>
+	<dd>
+		{{page.placeToTakenFrom}}
+	</dd>
+
+	<dt>
+		Comment:	
+	</dt>
+	<dd>
+		{{page.comment}}
+	</dd>
+</dl>
+
+{{content}}

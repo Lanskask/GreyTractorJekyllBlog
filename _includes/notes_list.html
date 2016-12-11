@@ -1,0 +1,12 @@
+<ul>
+	{% for life_note in site.pages %}
+		{% if life_note.type == include.type %}
+		<a href="{{site.baseurl}}{{life_note.url}}">
+			<img src="{{site.baseurl}}/img/life_notes/{{life_note.image}}" alt="Life note - {{life_note.title}}">
+			<li>
+				{{ life_note.title }}
+			</li>
+		</a>
+		{% endif %}
+	{% endfor %}
+</ul>

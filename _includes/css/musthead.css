@@ -1,0 +1,21 @@
+.musthead	{
+	padding: 1em;
+	background: 
+		#000531 
+		url("../img/header-image-2.png") 
+		no-repeat 
+		center 
+		center;
+	background-size: cover;
+	/*text-decoration-color: white;*/
+	
+	color: #fff;
+}
+
+.masthead-life-notes {
+	background: 
+		url("../img/header-image-life-notes.png") 
+		no-repeat
+		center center;
+	background-size: cover;
+}

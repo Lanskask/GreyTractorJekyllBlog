@@ -8,21 +8,38 @@
 	</li>
 
 	<li>
-		<a href="{{site.baseurl}}/news.html" 
-		class="{% if page.url =='/news.html' %}current{% endif %}"
+		<a href="{{site.baseurl}}/news/" 
+		class="
+		{% if page.url contains 'news' or 
+		page.url contains 'music' or 
+		page.url == '/notes/' %}
+			current
+		{% endif %}"
 		>News</a>
 	</li>
 
 	<li>
+		<a href="{{site.baseurl}}/life-notes/" 
+		class="
+		{% if page.url contains 'life-notes' %}
+			current
+		{% endif %}"
+		>Life Notes</a>
+	</li>
+
+	<!-- <li>
 		<a href="{{site.baseurl}}/music.html" 
-		class="{% if page.url =='/music.html' %}current{% endif %}"
+		class="
+		{% if page.url contains 'music' %}
+			current
+		{% endif %}"
 		>Music</a>
 	</li>
 
 	<li>
 		<a href="{{site.baseurl}}/notes.html"
 		class="{% if page.url =='/notes.html' %}current{% endif %}"
-		>Notes</a>
+		>Notes</a> -->
 	</li>
 </ul>
 </nav>
