@@ -1,6 +1,6 @@
 # GreyTractorJekyllBlog
 
-This not fullfilled with normal articles site made by 
+This not fullfilled with normal articles site made with help of 
 [Thomas Bradley - Jekyll](https://www.youtube.com/playlist?list=PLWjCJDeWfDdfVEcLGAfdJn_HXyM4Y7_k-)
  playlist.
 
